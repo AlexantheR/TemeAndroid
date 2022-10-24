@@ -19,12 +19,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ImageView pisica=findViewById(R.id.pisica);
-        pisica.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        pisica.setOnClickListener(view -> {
                 Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
                 startActivity(intent);
-            }
+//            Intent intent = new Intent(Intent.ACTION_SEND);
+//            intent.setType("image/*");
+//            String title = getResources().getString(R.string.chooser_title);
+//            Intent chooser = Intent.createChooser(intent,title);
+//            startActivity(chooser);
         });
 
         ImageView caine=findViewById(R.id.caine);
