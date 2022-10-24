@@ -16,6 +16,7 @@ import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private static final int PICK_IMAGE = 1;
@@ -62,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
                     "Genre: " + movie.getGen() + "\n" +
                     "Rating: " + movie.getRating() + "\n" +
                     "Date: " + movie.getRelease() + "\n" +
-                    "Budget: " + movie.getBudget() + "\n" +
-                    "Seekable: " + movie.getSeekable(), Toast.LENGTH_LONG).show();
+                    "Budget: " + movie.getBudget() + " RON" + "\n" +
+                    "Is seekable? : " + movie.getSeekable(), Toast.LENGTH_LONG).show();
         });
 
 

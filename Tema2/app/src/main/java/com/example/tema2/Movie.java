@@ -1,5 +1,7 @@
 package com.example.tema2;
 
+import android.widget.DatePicker;
+
 enum Genre{
     HORROR, ACTION, COMEDY, ADVENTURE;
 }
