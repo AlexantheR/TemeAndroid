@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Tema2</string>
+    <string name="titlul">Introduceti titlu filmului</string>
+    <string name="seekable">Seekable</string>
+    <string name="buton">Save movie</string>
+    <string name="dataFilm">Introduceti data</string>
 </resources>
