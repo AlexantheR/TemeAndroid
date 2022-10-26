@@ -34,12 +34,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_main);
 
-        String[] genuri = {"HORROR", "ACTION", "COMEDY", "ADVENTURE"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplicationContext(),
-                android.R.layout.simple_spinner_dropdown_item,
-                genuri);
-        Spinner spinner = findViewById(id.spinner);
-        spinner.setAdapter(adapter);
+//        String[] genuri = {"HORROR", "ACTION", "COMEDY", "ADVENTURE"};
+//        ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplicationContext(),
+//                android.R.layout.simple_spinner_dropdown_item,
+//                genuri);
+//        Spinner spinner = findViewById(id.spinner);
+//        spinner.setAdapter(adapter);
 
         editTitle = findViewById(id.editTextTitlu);
         spGen = findViewById(id.spinner);

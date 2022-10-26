@@ -1,6 +1,9 @@
 package com.example.tema2;
 
+import android.content.Intent;
 import android.widget.DatePicker;
+
+import java.util.Date;
 
 enum Genre{
     HORROR, ACTION, COMEDY, ADVENTURE;
@@ -14,6 +17,20 @@ public class Movie {
     private double budget;
     private String poster;
     private boolean seekable;
+    private Date releaseDate;
+    private Integer duration;
+
+    public Movie(String title, Genre gen, byte rating, String release, double budget, String poster, boolean seekable, Date releaseDate, Integer duration) {
+        this.title = title;
+        this.gen = gen;
+        this.rating = rating;
+        this.release = release;
+        this.budget = budget;
+        this.poster = poster;
+        this.seekable = seekable;
+        this.releaseDate = releaseDate;
+        this.duration = duration;
+    }
 
     public Movie() {
     }
@@ -66,6 +83,26 @@ public class Movie {
         this.poster = poster;
     }
 
+    public boolean isSeekable() {
+        return seekable;
+    }
+
+    public Date getReleaseDate() {
+        return releaseDate;
+    }
+
+    public void setReleaseDate(Date releaseDate) {
+        this.releaseDate = releaseDate;
+    }
+
+    public Integer getDuration() {
+        return duration;
+    }
+
+    public void setDuration(Integer duration) {
+        this.duration = duration;
+    }
+
     public boolean getSeekable() {
         return seekable;
     }
@@ -84,6 +121,8 @@ public class Movie {
                 ", budget=" + budget +
                 ", poster='" + poster + '\'' +
                 ", seekable=" + seekable +
+                ", releaseDate=" + releaseDate +
+                ", duration=" + duration +
                 '}';
     }
 }

@@ -4,4 +4,12 @@
     <string name="seekable">Seekable</string>
     <string name="buton">Save movie</string>
     <string name="dataFilm">Introduceti data</string>
+    <string name="button">Select date</string>
+    <array name="genre">
+        <item>Adventure</item>
+        <item>Comedy</item>
+        <item>Action</item>
+        <item>Animation</item>
+        <item>Drama</item>
+    </array>
 </resources>
